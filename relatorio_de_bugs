@@ -1,0 +1,66 @@
+ID: BUG-001
+Funcionalidade: Recuperação de Senha
+Tipo de Teste: Funcional / Fluxo Crítico
+Ambiente: Produção
+Data de Execução: 20/02/2026
+Pré-condição:
+Usuário possui conta cadastrada com email válido.
+
+Passos para Reproduzir:
+1. Acessar tela de login
+2. Clicar em "Esqueci minha senha"
+3. Inserir email cadastrado
+4. Confirmar solicitação de recuperação
+
+Resultado Esperado:
+- Sistema deve enviar código de recuperação para o email do usuário.
+- Deve existir opção para:
+   a) Reenviar código
+   b) Escolher outro meio de recebimento (ex: SMS)
+
+Resultado Obtido:
+- Código de recuperação não foi enviado.
+- Sistema não apresenta opção para reenviar código.
+- Não há alternativa de envio por outro meio.
+- Usuário fica impossibilitado de recuperar a conta.
+
+Status:
+❌ Aberto
+
+Severidade:
+🔴 Crítica
+
+Prioridade:
+🔴 Alta
+
+Impacto:
+Usuário não consegue recuperar acesso à conta.
+Afeta diretamente retenção, e experiência do cliente.
+
+Recomendação:
+Implementar:
+1. Validação do envio do código
+2. Botão de "Reenviar código"
+3. Alternativa de envio (ex: SMS)
+4. Mensagem clara de sucesso ou erro no envio
+
+ID: BUG-002
+Funcionalidade: Interface / Internacionalização
+Tipo de Teste: Exploratório / Usabilidade 
+Pré-condição: Usuário acessando o site na versão padrão em português (Brasil).
+Passos para Reproduzir: 
+1. Acessar página inicial
+2. Navegar pelo menu principal
+3. Acessar páginas internas (ex: carrinho, checkout, recuperação de senha)
+Resultado Esperado: Todo o conteúdo deve estar completamente traduzido para português.
+Resultado Obtido: Alguns textos permanecem em inglês, como:
+- Botões (ex: "Submit", "Cancel")
+- Mensagens de erro
+- Labels no checkout
+Status: ❌ Aberto
+Severidade: 🟡 Média
+Prioridade: 🟠 Média
+Impacto: - Experiência inconsistente para o usuário
+- Redução da credibilidade da marca
+- Possível confusão durante o processo de compra
+Recomendação: Revisar arquivos de tradução e garantir cobertura completa das chaves de internacionalização.
