@@ -56,16 +56,16 @@ Produto com estoque disponível
 Passos:
 Acessar o site
 Realizar login com usuário válido
-Adicionar 2 unidades do produto ao carrinho
+Adicionar 2 unidades de produtos com preco diferente ao carrinho
 Acessar o carrinho
 Clicar em “Finalizar Compra”
  
 Resultado Esperado:
 O sistema deve:
 	•	Calcular corretamente o valor total (Preço × Quantidade)
-	•	Exibir o valor total como R$ 89,00
+	•	Exibir o valor total como R$ 107,00
 	•	Permitir a finalização da compra
 Resultado obtido: 
-O sistema calculou corretamente o valor total exibindo R$ 89,00
+O sistema calculou corretamente o valor total exibindo R$ 107,00
 Status:
 ✅aprovado
