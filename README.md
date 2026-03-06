@@ -16,3 +16,12 @@ Tipos de teste aplicados:
 - Teste Funcional
 - Teste Negativo
 - Teste de Usabilidade
+
+Validação de Banco de Dados:
+
+Durante os testes foram utilizadas queries SQL para validar a integridade
+dos dados no banco de dados, 
+verificando inconsistências como:
+- usuários duplicados
+- pedidos sem associação com usuário
+- produtos com preço inválido
