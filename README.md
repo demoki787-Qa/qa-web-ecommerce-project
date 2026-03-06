@@ -25,3 +25,8 @@ verificando inconsistências como:
 - usuários duplicados
 - pedidos sem associação com usuário
 - produtos com preço inválido
+
+  Status do Projeto:
+Projeto finalizado com documentação de testes, bug reports,
+evidências e validações SQL.
+ 
